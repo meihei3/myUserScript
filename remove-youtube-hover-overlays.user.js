@@ -4,12 +4,8 @@
 // @description YouTubeのhover-overlaysを消す
 // @match       https://www.youtube.com/*
 // @version     1
-// @grant       none
+// @grant       GM_addStyle
 // ==/UserScript==
 
-(function(){
-    var elms = document.querySelectorAll("[id='hover-overlays']");
-    for(var i = 0; i < elms.length; i++){
-      elms[i].style.display='none';
-    }
-})();
+
+GM_addStyle('div#hover-overlays {display: none !important; }');
