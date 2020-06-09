@@ -7,5 +7,4 @@
 // @grant       GM_addStyle
 // ==/UserScript==
 
-
 GM_addStyle('div#hover-overlays {display: none !important; }');
